@@ -149,3 +149,54 @@ if (valorCusto < 0 || valorVenda < 0) {
 lucro = valorVenda - valorCustoTotal;
 console.log(lucro*1000);
 }
+
+//Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+let salarioBruto = 3000.00;
+let salarioBase = 0;
+let liquidoAReceber = 0;
+let INSS = 0;
+let IR = 0;
+let parcelaADeduzir = 0;
+if (salarioBruto <= 1556.94) {
+  INSS = (8 / 100);
+  salarioBase = salarioBruto - (INSS * salarioBruto);
+}
+else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
+  INSS = (9 / 100);
+  salarioBase = salarioBruto - (INSS * salarioBruto);
+}
+else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
+  INSS = (11 / 100);
+  salarioBase = salarioBruto - (INSS * salarioBruto);
+}
+else if (salarioBruto >5189.82) {
+  INSS = 570.88;
+  salarioBase = salarioBruto - (INSS * salarioBruto);
+}
+
+if (salarioBase <= 1903.98) {
+  IR = 0;
+  parcelaADeduzir = 0;
+  salarioDescontado = salarioBase - ((IR * salarioBase) - parcelaADeduzir);
+}
+else if (salarioBase >= 1903.99 && salarioBase <= 2826.65) {
+  IR = (7.5 / 100);
+  parcelaADeduzir = 142.80;
+  salarioDescontado = salarioBase - ((IR * salarioBase) - parcelaADeduzir);
+}
+else if (salarioBase >= 2826.66 && salarioBas <= 3751.05) {
+  IR = (15 / 100);
+  parcelaADeduzir = 354.80;
+  salarioDescontado = salarioBase - ((IR * salarioBase) - parcelaADeduzir);
+}
+else if (salarioBase >= 3751.06 && salarioBase <= 4664.68) {
+  IR = (22.5 / 100);
+  parcelaADeduzir = 646.13;
+  salarioDescontado = salarioBase - ((IR * salarioBase) - parcelaADeduzir);
+}
+else if (salarioBase > 4664.68) {
+  IR = (27.5 / 100);
+  parcelaADeduzir = 869.36;
+  salarioDescontado = salarioBase - ((IR * salarioBase) - parcelaADeduzir);
+}
+console.log(salarioDescontado)
