@@ -61,3 +61,29 @@ else if ((h + c + d) === 180) {
 else if ((h + c + d) !== 180) {
   console.log('false');
 }
+
+//Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+let peça = 'QuEeN';
+peça = peça.toLowerCase();
+switch (peça) {
+  case 'bishop':
+    console.log('diagonals');
+    break;
+  case 'king':
+      console.log('all directions, one position at time');
+      break;
+  case 'queen':
+    console.log('all directions, as many positions she wants');
+    break;
+  case 'knight':
+    console.log('in "L"');
+    break;
+  case 'rook':
+    console.log('line');
+    break;
+  case 'pawn':
+    console.log('foward');
+    break;
+  default:
+    console.log('error');
+}
