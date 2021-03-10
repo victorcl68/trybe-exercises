@@ -112,12 +112,24 @@ else {
   console.log('Erro');
 }
 
-//Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .
+//Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false.
 let one = 1;
 let two = 3;
 let three = 5;
 
 if (one % 2 === 0 || two % 2 === 0 || three % 2 === 0) {
+  console.log('true');
+}
+else {
+  console.log('false');
+}
+
+//Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false.
+let one = 1;
+let two = 2;
+let three = 6;
+
+if (one % 2 !== 0 || two % 2 !== 0 || three % 2 !== 0) {
   console.log('true');
 }
 else {
