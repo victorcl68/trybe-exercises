@@ -135,3 +135,17 @@ if (one % 2 !== 0 || two % 2 !== 0 || three % 2 !== 0) {
 else {
   console.log('false');
 }
+
+//Escreva um programa que se inicie com dois valores em duas variáveis diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+let valorCusto = 50;
+let valorVenda = 75;
+let impostoSobreOCusto = (20 / 100) * valorCusto
+let valorCustoTotal = 0;
+let lucro = 0;
+if (valorCusto < 0 || valorVenda < 0) {
+  console.log('Erro');
+} else {
+  valorCustoTotal = valorCusto + impostoSobreOCusto;
+lucro = valorVenda - valorCustoTotal;
+console.log(lucro*1000);
+}
