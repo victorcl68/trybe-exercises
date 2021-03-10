@@ -46,3 +46,18 @@ else if (number < 0) {
 else {
   console.log('zero');
 }
+
+//Faça um programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
+let h = 30;
+let c = 60;
+let d = 90;
+
+if (h < 0 || c < 0 || d < 0){
+  console.log('erro');
+}
+else if ((h + c + d) === 180) {
+  console.log('true');
+}
+else if ((h + c + d) !== 180) {
+  console.log('false');
+}
