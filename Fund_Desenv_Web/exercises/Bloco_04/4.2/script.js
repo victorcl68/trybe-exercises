@@ -50,3 +50,11 @@ if (impar === 0){
 else{
   console.log(impar)
 }
+
+//Utilizando for , descubra qual o menor valor contido no array e imprima-o;
+let smaller = numbers[0];
+for (index = 1; index < numbers.length; index +=1)
+  if (numbers[index] < smaller) {
+    smaller = numbers[index];
+  }
+console.log(smaller);
