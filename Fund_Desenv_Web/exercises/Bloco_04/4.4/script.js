@@ -12,3 +12,7 @@ console.log(info);
 for (let i in info) {
   console.log(i);
 }
+
+for (let i in info) {
+  console.log(info[i]);
+}
