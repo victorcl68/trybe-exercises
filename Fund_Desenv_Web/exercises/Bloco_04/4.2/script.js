@@ -66,3 +66,13 @@ for (let index = 1; index < 26; index += 1) {
   numberscounted.push(index);
 }
 console.log(numberscounted);
+
+//Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2 .
+let numberscounted = [];
+
+for (let index = 1; index < 26; index += 1) {
+  numberscounted.push(index);
+}
+for (let index = 0; index < numberscounted.length; index += 1) {
+  console.log(numberscounted[index] / 2);
+};
