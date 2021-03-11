@@ -15,3 +15,17 @@ for (let line = 1; line <= middle; line += 1) {
   controlRight += 1;
   console.log(outputLine);
 }
+
+let divisors = 0;
+let numberToCheck = 8;
+
+for (let number = 1; number <= numberToCheck; number += 1) {
+  if (numberToCheck % number === 0) 
+  divisors += 1;
+}
+
+if (divisors === 2) {
+  console.log(numberToCheck + ' é primo');
+} else {
+  console.log(numberToCheck + ' não é primo');
+};
