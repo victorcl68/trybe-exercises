@@ -23,3 +23,13 @@ for (let i = 1; i < numbers.length; i++) {
   }
 }
 console.log(numbers);
+
+let newArray = [];
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i + 1]) {
+    newArray.push(numbers[i] * numbers[i + 1]);
+  } else {
+    newArray.push(numbers[i] * 2);
+  }
+}
+console.log(newArray);
