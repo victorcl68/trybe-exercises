@@ -8,3 +8,10 @@ if (n > 1) {
     console.log(line)
   };
 };
+
+let n = 5;
+let inputLine = '';
+for (let index = 0; index <= n; index += 1) {
+  console.log(inputLine);
+  inputLine = inputLine + '*';
+};
