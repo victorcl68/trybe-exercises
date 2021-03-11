@@ -45,10 +45,10 @@ for (index = 0; index < numbers.length; index +=1)
     impar += 1;
   }
 if (impar === 0){
-  console.log('nenhum valor ímpar encontrado')
+  console.log('nenhum valor ímpar encontrado');
 }
 else{
-  console.log(impar)
+  console.log(impar);
 }
 
 //Utilizando for , descubra qual o menor valor contido no array e imprima-o;
@@ -58,3 +58,11 @@ for (index = 1; index < numbers.length; index +=1)
     smaller = numbers[index];
   }
 console.log(smaller);
+
+//Utilizando for , crie uma array que vá de 1 até 25 e imprima o resultado;
+let numberscounted = [];
+
+for (let index = 1; index < 26; index += 1) {
+  numberscounted.push(index);
+}
+console.log(numberscounted);
