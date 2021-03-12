@@ -75,3 +75,12 @@ function maisRepetido(numeros) {
 }
 
 console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3]));
+
+function soma(n) {
+  let all = 0;
+  for (let i = 1; i <= n; i += 1) {
+    all += i;
+  }
+  return all;
+}
+console.log(soma(5));
