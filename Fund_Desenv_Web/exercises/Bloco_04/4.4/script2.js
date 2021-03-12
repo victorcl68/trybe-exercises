@@ -11,3 +11,18 @@ function verificaPalindrome(palavra) {
 }
 
 console.log(verificaPalindrome('Arara'));
+
+function indiceMaiorValor(array) {
+  let maior = 0;
+  let maiorIndice = 0;
+  for (let i in array) {
+    if (array[i] > maior) {
+      maior = array[i];
+      maiorIndice = i;
+    } else {
+    }
+  }
+  return maiorIndice;
+}
+
+console.log(indiceMaiorValor([2, 3, 6, 7, 10, 1]));
