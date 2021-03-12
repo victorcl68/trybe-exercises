@@ -84,3 +84,17 @@ function soma(n) {
   return all;
 }
 console.log(soma(5));
+
+function verificaFimPalavra(palavra, fimPalavra) {
+  apalavra = palavra.split("");
+  finalPalavra = fimPalavra.split("");
+  control = true;
+  for (let i = 0; i < finalPalavra.length; i++) {
+    if (apalavra[apalavra.length-finalPalavra.length+i] != finalPalavra[i]) {
+      control = false;
+    }
+  }
+  return control;
+}
+
+console.log(verificaFimPalavra("trybe", "be"));
