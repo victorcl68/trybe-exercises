@@ -12,7 +12,7 @@ let info2 = {
   recorrente: "Sim"
 };
 
-/* console.log('Bem vinda, ' + info.personagem);
+console.log('Bem vinda, ' + info.personagem);
 
 console.log(info);
 
@@ -22,7 +22,7 @@ for (let i in info) {
 
 for (let i in info) {
   console.log(info[i]);
-} */
+}
 
 for (let j in info) {
   if (
