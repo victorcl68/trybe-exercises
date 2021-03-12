@@ -13,7 +13,7 @@ function verificaPalindrome(palavra) {
 console.log(verificaPalindrome('Arara'));
 
 function indiceMaiorValor(array) {
-  let maior = 0;
+  let maior = array[0];
   let maiorIndice = 0;
   for (let i in array) {
     if (array[i] > maior) {
@@ -26,3 +26,18 @@ function indiceMaiorValor(array) {
 }
 
 console.log(indiceMaiorValor([2, 3, 6, 7, 10, 1]));
+
+function indiceMaiorValor(array) {
+  let menor = array[0];
+  let menorIndice = 0;
+  for (let i in array) {
+    if (array[i] < menor) {
+      menor = array[i];
+      menorIndice = i;
+    } else {
+    }
+  }
+  return menorIndice;
+}
+
+console.log(indiceMaiorValor([2, 4, 6, 7, 10, 0, -3]));
