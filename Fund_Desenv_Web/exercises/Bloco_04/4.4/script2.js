@@ -53,3 +53,25 @@ function maiorPalavra(palavras) {
 }
 
 console.log(maiorPalavra(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+function maisRepetido(numeros) {
+  let repetido = 0;
+  let num = 0;
+  let indexRepetido = 0;
+  for (let index in numeros) {
+    let verifica = numeros[index];
+    for (let index2 in numeros) {
+      if (verifica === numeros[index2]) {
+        num++;
+      }
+    }
+    if (num > repetido) {
+      repetido = num;
+      indexRepetido = index;
+    }
+    num = 0;
+  }
+  return numeros[indexRepetido];
+}
+
+console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3]));
