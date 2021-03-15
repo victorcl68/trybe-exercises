@@ -62,30 +62,38 @@
       titulo1.innerText = 'Exercício 5.2 - JavaScript DOM';
       corpo.appendChild(titulo1);
 
-      let novadiv = document.createElement('div');
-      novadiv.className = 'main-content';
-      corpo.appendChild(novadiv);
+      let novaDiv = document.createElement('div');
+      novaDiv.className = 'main-content';
+      corpo.appendChild(novaDiv);
 
       let div2 = document.createElement('div');
       div2.className = 'center-content';
-      novadiv.appendChild(div2);
+      novaDiv.appendChild(div2);
 
-      let elementop = document.createElement('p');
-      elementop.innerText = 'Texto Parágrafo';
-      div2.appendChild(elementop);
+      let elementoP = document.createElement('p');
+      elementoP.innerText = 'Texto Parágrafo';
+      div2.appendChild(elementoP);
 
       let left = document.createElement('div');
       left.className = 'left-content';
-      novadiv.appendChild(left);
+      novaDiv.appendChild(left);
 
       let right = document.createElement('div');
       right.className = 'right-content';
-      novadiv.appendChild(right);
+      novaDiv.appendChild(right);
 
       let imagens = document.createElement('img')
       imagens.className = 'small-image';
       imagens.src = 'https://picsum.photos/200';
       left.appendChild(imagens);
+
+      let lista = document.createElement('ul');
+      for (i = 1; i <= 10; i += 1) {
+        let listaNaoOrdenada = document.createElement('li');
+        listaNaoOrdenada.innerText = i;
+        lista.appendChild(listaNaoOrdenada);
+      }
+      right.appendChild(lista);
     </script>
   </body>
 </html>
