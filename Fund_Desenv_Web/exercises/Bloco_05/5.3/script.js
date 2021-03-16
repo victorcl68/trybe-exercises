@@ -24,7 +24,11 @@ function createDaysOfTheMonth () {
   for (let i = 0; i < dezDaysList.length; i += 1) {
     const eachDay = dezDaysList[i];
     const eachDayListItem = document.createElement('li');
+    eachDayListItem.className = 'day';
     eachDayListItem.innerHTML = eachDay;
+    if (eachDay === 24 || eachDay === 25 || eachDay === 31) {
+      eachDayListItem.className = 'holiday';
+    }
 
     monthDaysList.appendChild(eachDayListItem);
   };
@@ -33,11 +37,26 @@ function createDaysOfTheMonth () {
 createDaysOfTheMonth();
 
 function createHolidayButton (Feriados) {
-  const theButton = document.createElement('button');
+  let theButton = document.createElement('button');
   theButton.id = 'btn-holiday';
   theButton.innerText = Feriados;
-  const buttoncontainer = document.querySelector('.buttons-container');
+  let buttoncontainer = document.querySelector('.buttons-container');
   buttoncontainer.appendChild(theButton);
 }
 
 createHolidayButton ('Feriados');
+
+let captureHolidayButton = document.querySelector('#btn-holiday');
+let allHolidays = document.querySelectorAll('.holiday');
+captureHolidayButton.addEventListener('click', changeBackgroundHoliday);
+
+function changeBackgroundHoliday () {
+  for (cont = 0; cont < allHolidays.length; cont += 1) {
+    if (allHolidays[cont].style.backgroundColor === 'orange') {
+      allHolidays[cont].style.backgroundColor = 'rgb(238,238,238)';
+    }
+    else {
+      allHolidays[cont].style.backgroundColor = 'orange';
+    };
+  };
+};
