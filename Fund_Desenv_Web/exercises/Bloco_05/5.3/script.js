@@ -127,3 +127,12 @@ function addTask (task) {
   let myTasks = document.querySelector('.my-tasks');
   myTasks.appendChild(mySpan);
 }
+
+addLegendColor ('green');
+function addLegendColor (color) {
+  let newColor = document.createElement('div');
+  newColor.className = 'task';
+  newColor.style.backgroundColor = color;
+  let myTasks = document.querySelector('.my-tasks');
+  myTasks.appendChild(newColor);
+}
