@@ -37,11 +37,11 @@ function createDaysOfTheMonth () {
 createDaysOfTheMonth();
 
 function createHolidayButton (Feriados) {
-  let theButton = document.createElement('button');
-  theButton.id = 'btn-holiday';
-  theButton.innerText = Feriados;
-  let buttoncontainer = document.querySelector('.buttons-container');
-  buttoncontainer.appendChild(theButton);
+  let theHolidayButton = document.createElement('button');
+  theHolidayButton.id = 'btn-holiday';
+  theHolidayButton.innerText = Feriados;
+  let buttonHolidaycontainer = document.querySelector('.buttons-container');
+  buttonHolidaycontainer.appendChild(theHolidayButton);
 }
 
 createHolidayButton ('Feriados');
@@ -60,3 +60,13 @@ function changeBackgroundHoliday () {
     };
   };
 };
+
+function createFridayButton (SextaFeira) {
+  let theFridayButton = document.createElement('button');
+  theFridayButton.id = 'btn-friday';
+  theFridayButton.innerText = SextaFeira;
+  let buttonFridaycontainer = document.querySelector('.buttons-container');
+  buttonFridaycontainer.appendChild(theFridayButton);
+}
+
+createFridayButton ('Sexta-feira');
