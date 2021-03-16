@@ -136,3 +136,15 @@ function addLegendColor (color) {
   let myTasks = document.querySelector('.my-tasks');
   myTasks.appendChild(newColor);
 }
+
+let divTask = document.querySelector('.task');
+divTask.addEventListener('click', addEventColor);
+
+function addEventColor (event) {
+  if (event.target.className === 'task'){
+    event.target.className += ' selected';
+  }
+  else {
+    event.target.className = 'task';
+  }
+}
