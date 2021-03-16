@@ -141,10 +141,29 @@ let divTask = document.querySelector('.task');
 divTask.addEventListener('click', addEventColor);
 
 function addEventColor (event) {
-  if (event.target.className === 'task'){
+  if (event.target.className === 'task') {
     event.target.className += ' selected';
   }
   else {
     event.target.className = 'task';
-  }
-}
+  };
+};
+
+setDayColor();
+function setDayColor() {
+  let selectedTask = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let taskDiv = document.querySelector('.task');
+  let taskColor = taskDiv.style.backgroundColor;
+  
+  days.addEventListener('click', addEventDays);
+  function addEventDays (event) {
+    let eventTargetColor = event.target.style.color;
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  };
+};
