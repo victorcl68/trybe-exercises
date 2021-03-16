@@ -94,3 +94,28 @@ function displayFridays(fridaysArray) {
     };
   };
 };
+
+function dayMouseOver() {
+  let days = document.querySelector('#days');
+
+  days.addEventListener('mouseover', zoomIn);
+
+  function zoomIn (event) {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '600';
+  };
+};
+
+function dayMouseOut() {
+  let days = document.querySelector('#days');
+
+  days.addEventListener('mouseout', zoomOut);
+
+  function zoomOut (event) {
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = '200';
+  };
+};
+
+dayMouseOver();
+dayMouseOut();
