@@ -10,38 +10,38 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 1: Introdução - Unix & Shell
 
-- [X] 1-3: _Unix & Bash - Part 1_
-- [X] 1-4: _Unix & Bash - Part 2_
-- [X] 1-5: _Shell Script_
+- [] 1-3: _Unix & Bash - Part 1_
+- [] 1-4: _Unix & Bash - Part 2_
+- [] 1-5: _Shell Script_
 
 ##### Bloco 2: Git & GitHub
 
-- [X] 2-1: _O que é e para que serve?_
-- [X] 2-2: _Entendendo os comandos_
-- [X] 2-3: _Internet - Entendendo como ela funciona_
+- [] 2-1: _O que é e para que serve?_
+- [] 2-2: _Entendendo os comandos_
+- [] 2-3: _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3: Introdução - HTML & CSS
 
-- [X] 3-1: _HTML & CSS - Estruturas de página_
-- [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
-- [X] 3-3: _HTML & CSS - Seletores e posicionamento_
-- [X] 3-4: _HTML Semântico_
-- [X] 3-5: _[Projeto - HTML & CSS](https://victorcl68.github.io/project-lessons-learned/)_
+- [] 3-1: _HTML & CSS - Estruturas de página_
+- [] 3-2: _HTML & CSS - Primeiros passos em CSS_
+- [] 3-3: _HTML & CSS - Seletores e posicionamento_
+- [] 3-4: _HTML Semântico_
+- [] 3-5: _[Projeto - HTML & CSS](https://victorcl68.github.io/project-lessons-learned/)_
 
 ##### Bloco 4: Introdução - JavaScript
 
-- [X] 4-1: _JavaScript - Primeiros passos_
-- [X] 4-2: _JavaScript - Array e loop For_
-- [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [] 4-1: _JavaScript - Primeiros passos_
+- [] 4-2: _JavaScript - Array e loop For_
+- [] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [ ] 4-4: _JavaScript - Objetos e funções_
-- [X] 4-5: _[Projeto - Playground Functions](https://github.com/victorcl68/project-playground-functions)_
+- [] 4-5: _[Projeto - Playground Functions](https://github.com/victorcl68/project-playground-functions)_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
-- [X] 5-1: _JavaScript - DOM e seletores_
-- [X] 5-2: _JavaScript - Trabalhando com elementos_
-- [X] 5-3: _JavaScript - Eventos_
-- [X] 5-4: _JavaScript - Web Storage_
+- [] 5-1: _JavaScript - DOM e seletores_
+- [] 5-2: _JavaScript - Trabalhando com elementos_
+- [] 5-3: _JavaScript - Eventos_
+- [] 5-4: _JavaScript - Web Storage_
 - [ ] 5-5: _[Projeto - Meme Generator]()_
 - [ ] 5-6: _[Projeto - Arte com Pixels]()_
 - [ ] 5-7: _[Projeto - Lista de tarefas]()_
@@ -89,8 +89,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 11: Introdução - React
 
-- [X] 11-1: _'Hello, world!' no React!_
-- [X] 11-2: _Componentes React_
+- [] 11-1: _'Hello, world!' no React!_
+- [] 11-2: _Componentes React_
 - [ ] 11-3: _[Projeto - Movie Cards Library]()_
 
 ##### Bloco 12: React
