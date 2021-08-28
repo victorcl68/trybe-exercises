@@ -1,0 +1,31 @@
+{
+  "name": "trybe-exercises",
+  "version": "1.0.0",
+  "description": "Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Victor Cabrera Lopes Cardoso](https://www.linkedin.com/in/victorclc/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "simpsons": "nodemon getSimpsonsAPI.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorcl68/trybe-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorcl68/trybe-exercises/issues"
+  },
+  "homepage": "https://github.com/victorcl68/trybe-exercises#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-rescue": "^1.1.31"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
