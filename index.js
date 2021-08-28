@@ -30,6 +30,12 @@ app.put('/users/:name/:age', (req, res) => {
   return res.status(200).json({ "message": `Seu nome é ${name} e você tem ${ageInNumber} anos de idade` })
 })
 
+app.get('/validateToken', function (req, res) {
+  const token = req.headers.authorization;
+  if (token.length !== 16 || !token) return res.status(401).json({ message: 'Token inválido!' });
+  res.status(200).json({message: 'Valid Token!'})
+});
+
 app.all('*', (req, res) => {
   return res.status(404).json({ message: `Rota '${req.path}' não existe!`});
 });
